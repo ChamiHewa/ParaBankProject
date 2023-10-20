@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <test verbose="2" preserve-order="true" name="Login Test">
+<!--        <parameter name="usernameP" value="john"/>-->
+<!--        <parameter name="passwordP" value="demo"/>-->
+        <classes>
+            <class name="testcase.Login">
+            <methods>
+                <include name="ValidatePageLoading"/>
+                <include name="LoginEmptyCred"/>
+                <include name="LoginInvalidCred"/>
+                <include name="LoginValidCred"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
